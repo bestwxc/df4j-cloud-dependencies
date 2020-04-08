@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      profile: pdtlta
+logging:
+  config: classpath:logback-spring-pdt-info.xml
+logback:
+  logdir: /opt/log/dz-kfb
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.20.26.127:8810/eureka/,http://172.20.26.128:8810/eureka/
+  instance:
+    ip-address: 172.20.26.6

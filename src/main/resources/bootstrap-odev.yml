@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      profile: odev
+logging:
+  config: classpath:logback-spring-test.xml
+logback:
+  logdir: /opt/log/dz-kfb
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.30.0.185:8810/eureka/
+  instance:
+    ip-address: 172.30.0.185
